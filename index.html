@@ -18,9 +18,9 @@
         //     localStorage.setItem("sessionOn", true)
         // })
 
-        // window.onbeforeunload = () => {
-        //     localStorage.removeItem('sessionOn')
-        // }
+        window.onbeforeunload = () => {
+            localStorage.removeItem('sessionOn')
+        }
     </script>
     </body>
 </html>
