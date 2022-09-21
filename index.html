@@ -10,6 +10,10 @@
     <body>
             
     <script>
+        if (!localStorage.getItem("sessionOn")) {
+            alert(1488);
+        }
+        
         window.addEventListener('storage', events => {
             localStorage.setItem("sessionOn", true)
         })
